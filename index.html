@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hong Kong Eat and Burn</title>
+  <link rel="stylesheet" href="styles/site.css">
+</head>
+
+<body class="page-home">
+
+  <header>
+    <img src="images/hk.jpg" alt="Hong Kong skyline view">
+    <div class="header-text">
+      <h1>Hong Kong Eat and Burn</h1>
+      <p>A travel guide for those who believe a great trip should include memorable meals, fresh air, and a little effort on foot.</p>
+    </div>
+    <button id="hamburger-btn" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav id="main-nav" class="hidden">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="eat.html">Eat</a></li>
+      <li><a href="burn.html">Burn</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <p>This site brings together Hong Kong's most worthwhile local eateries and outdoor routes, helping you plan days that feel balanced, rewarding, and distinctly Hong Kong.</p>
+    </section>
+
+    <section class="how-to-use">
+      <h2>How to use this site</h2>
+      <ol>
+        <li>Browse restaurants for authentic local flavors, neighborhood character, and practical details.</li>
+        <li>Match each meal with a nearby hike, walk, or island trail to create a balanced day.</li>
+        <li>Use the itinerary pairings to plan short trips that combine indulgence with movement.</li>
+      </ol>
+    </section>
+
+    <section class="itineraries">
+      <h2>Featured itineraries</h2>
+      <article
+        class="itinerary-card"
+        data-title="Central roast goose and Dragon's Back"
+        data-desc="Begin with a classic roast goose lunch in Central, then head to Dragon's Back for a scenic coastal hike with wide-open views over the South China Sea. This pairing balances a rich, flavourful meal with fresh air and rewarding effort."
+        data-img="images/dragons_back.png">
+        <img src="images/dragons_back.png" alt="Dragon's Back ridge trail">
+        <h3>Central roast goose and Dragon's Back</h3>
+        <p>Begin with a classic roast goose lunch in Central, then head to Dragon's Back for a scenic coastal hike with wide-open views.</p>
+        <span class="card-hint">Tap to read more</span>
+      </article>
+      <article
+        class="itinerary-card"
+        data-title="Sham Shui Po dim sum and Lion Rock"
+        data-desc="Start your day with dim sum in Sham Shui Po, then make your way to Lion Rock for a more challenging climb and sweeping city vistas. The contrast between the busy morning streets and the quiet ridge is part of what makes this pairing special."
+        data-img="images/lion_rock.png">
+        <img src="images/lion_rock.png" alt="Lion Rock summit">
+        <h3>Sham Shui Po dim sum and Lion Rock</h3>
+        <p>Start your day with dim sum in Sham Shui Po, then make your way to Lion Rock for a more challenging climb and sweeping city vistas.</p>
+        <span class="card-hint">Tap to read more</span>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Hong Kong Eat and Burn</p>
+  </footer>
+
+  <section class="sources">
+    <h2>Sources</h2>
+    <ul>
+      <li>Hong Kong skyline photo: Cathay Pacific</li>
+      <li>Dragon's Back photo: Alamy</li>
+      <li>Lion Rock photo: iStock</li>
+    </ul>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal-overlay" class="hidden">
+    <div id="modal-box">
+      <button id="modal-close" aria-label="Close modal">✕</button>
+      <img id="modal-img" src="" alt="">
+      <div id="modal-content">
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+<script src="scripts/jquery-3.7.1.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

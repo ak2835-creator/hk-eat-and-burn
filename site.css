@@ -1,0 +1,554 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 860px;
+  margin: 0 auto;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1e3a2f;
+  background-color: #f5f2eb;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/*HEADER*/
+
+header {
+  background-color: #1e3a2f;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid #5a8a4a;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+header h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+header p {
+  font-size: 0.8rem;
+  color: #8ab49a;
+  margin-top: 0.3rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+
+/*HAMBURGER BUTTON*/
+
+#hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  padding: 0.45rem 0.5rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+#hamburger-btn span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+
+/* NAVIGATION*/
+
+nav {
+  background-color: #5a8a4a;
+  padding: 0.75rem 1.25rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 0.3rem 1.1rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Georgia, serif;
+  letter-spacing: 0.03em;
+}
+
+nav ul li a.active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  font-weight: bold;
+  color: #1e3a2f;
+}
+
+#main-nav.hidden {
+  display: none;
+}
+
+
+/*WIDE SCREEN (700px+)*/
+
+@media (min-width: 700px) {
+
+  #hamburger-btn {
+    display: none;
+  }
+
+  #main-nav,
+  #main-nav.hidden {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+
+/*MAIN*/
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  background-color: #ffffff;
+  padding: 1.75rem 1.25rem;
+  border-left: 5px solid #5a8a4a;
+}
+
+.intro p {
+  font-size: 1rem;
+  color: #3a5a4a;
+  line-height: 1.8;
+}
+
+.how-to-use {
+  background-color: #1e3a2f;
+  padding: 1.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.how-to-use h2 {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c8d4a0;
+}
+
+.how-to-use ol {
+  padding-left: 1.25rem;
+}
+
+.how-to-use ol li {
+  font-size: 0.9rem;
+  color: #d0cfc0;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+
+/*ITINERARY CARDS*/
+
+.itineraries {
+  background-color: #f5f2eb;
+  padding: 1.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.itineraries h2 {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.itinerary-card {
+  background-color: #ffffff;
+  border: 1px solid #d8d4c8;
+  border-top: 4px solid #5a8a4a;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.itinerary-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.itinerary-card h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1e3a2f;
+  padding: 0.875rem 1rem 0.4rem;
+  line-height: 1.35;
+}
+
+.itinerary-card > p {
+  font-size: 0.875rem;
+  color: #4a6a54;
+  padding: 0 1rem 0.5rem;
+  line-height: 1.65;
+}
+
+.card-hint {
+  display: block;
+  font-size: 0.75rem;
+  color: #5a8a4a;
+  font-style: italic;
+  padding: 0 1rem 0.875rem;
+  letter-spacing: 0.02em;
+}
+
+
+
+
+/*RESTAURANTS & ACTIVITIES*/
+
+.restaurants,
+.activities {
+  background-color: #f5f2eb;
+  padding: 1.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.restaurants h2,
+.activities h2 {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.restaurants article,
+.activities article {
+  background-color: #ffffff;
+  border: 1px solid #d8d4c8;
+  border-left: 5px solid #5a8a4a;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurants article img,
+.activities article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.restaurants article h3,
+.activities article h3 {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #1e3a2f;
+  padding: 1rem 1rem 0.3rem;
+}
+
+.restaurants article > p,
+.activities article > p {
+  font-size: 0.9rem;
+  color: #4a6a54;
+  padding: 0.4rem 1rem 0.75rem;
+  line-height: 1.65;
+}
+
+.restaurants article h4,
+.activities article h4 {
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c8d4a0;
+  padding: 0.5rem 1rem;
+  background-color: #1e3a2f;
+}
+
+.restaurants article dl,
+.activities article dl {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem 1rem;
+}
+
+.restaurants article dl dt,
+.activities article dl dt {
+  font-size: 0.72rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7a9a8a;
+  margin-top: 0.6rem;
+}
+
+.restaurants article dl dd,
+.activities article dl dd {
+  font-size: 0.9rem;
+  color: #1e3a2f;
+  margin-left: 0;
+}
+
+
+
+
+/*FOOTER*/
+
+footer {
+  background-color: #1e3a2f;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: #6a8a7a;
+  letter-spacing: 0.05em;
+}
+
+
+/*SOURCES*/
+
+.sources {
+  padding: 1.25rem;
+  background-color: #f5f2eb;
+}
+
+.sources h2 {
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7a9a8a;
+  margin-bottom: 0.5rem;
+}
+
+.sources ul {
+  padding-left: 1.25rem;
+}
+
+.sources ul li {
+  font-size: 0.75rem;
+  color: #7a9a8a;
+  line-height: 1.6;
+}
+
+
+/*MODAL*/
+
+#modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#modal-overlay.hidden {
+  display: none;
+}
+
+#modal-box {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 4px;
+  border-top: 4px solid #5a8a4a;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#modal-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+#modal-content {
+  padding: 1.25rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#modal-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1e3a2f;
+  line-height: 1.35;
+}
+
+#modal-desc {
+  font-size: 0.9rem;
+  color: #4a6a54;
+  line-height: 1.75;
+}
+
+#modal-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: 1.5px solid #d8d4c8;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  color: #1e3a2f;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+}
+
+
+/* Home — sage green */
+.page-home nav {
+  background-color: #5a8a4a;
+}
+
+.page-home nav ul li a.active {
+  color: #5a8a4a;
+}
+
+.page-home nav ul li a {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.page-home .itineraries h2 {
+  color: #5a8a4a;
+}
+
+/* Eat — terracotta */
+.page-eat nav {
+  background-color: #b85c38;
+}
+
+.page-eat nav ul li a.active {
+  color: #b85c38;
+}
+
+.page-eat header img {
+  border-color: #b85c38;
+}
+
+.page-eat #hamburger-btn {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.page-eat .restaurants h2 {
+  color: #b85c38;
+}
+
+.page-eat .restaurants article {
+  border-left-color: #b85c38;
+  border-top-color: #b85c38;
+}
+
+/* Burn — teal */
+.page-burn nav {
+  background-color: #2a7a6a;
+}
+
+.page-burn nav ul li a.active {
+  color: #2a7a6a;
+}
+
+.page-burn header img {
+  border-color: #2a7a6a;
+}
+
+.page-burn #hamburger-btn {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.page-burn .activities h2 {
+  color: #2a7a6a;
+}
+
+.page-burn .activities article {
+  border-left-color: #2a7a6a;
+}
+
+@media (pointer: coarse) {
+  nav ul li a {
+    padding: 0.6rem 1.1rem;
+  }
+
+  #hamburger-btn {
+    padding: 0.65rem 0.7rem;
+  }
+
+  .itinerary-card {
+    padding-bottom: 0.5rem;
+  }
+
+  #modal-close {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+}

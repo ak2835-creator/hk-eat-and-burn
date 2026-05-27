@@ -1,0 +1,79 @@
+{
+  "restaurants": [
+    {
+      "name": "Yat Lok (Central)",
+      "image": "images/yat_lok.webp",
+      "alt": "Roast goose dish from Yat Lok restaurant",
+      "description": "Yat Lok is one of Hong Kong's most respected roast goose restaurants, offering a focused menu and a distinctly local dining experience. The pace is brisk, the atmosphere is unpretentious, and the food is exactly what many visitors hope to find when they seek out a classic Hong Kong meal.",
+      "location": "Central, Hong Kong",
+      "price": "$$",
+      "special": "Known for its roast goose, long-standing reputation, and its place in the city's Cantonese roast meats tradition."
+    },
+    {
+      "name": "Tim Ho Wan (Sham Shui Po)",
+      "image": "images/tim_ho_wan.webp",
+      "alt": "Dim sum dishes from Tim Ho Wan",
+      "description": "Tim Ho Wan is a reliable dim sum stop for travelers who want something both famous and accessible. The setting is casual, the service is efficient, and the food reflects the kind of everyday Hong Kong eating that remains deeply satisfying.",
+      "location": "Sham Shui Po, Kowloon",
+      "price": "$",
+      "special": "Widely recognized for offering well-made dim sum at approachable prices."
+    },
+    {
+      "name": "Kam's Roast Goose",
+      "image": "images/kams.webp",
+      "alt": "Roast goose from Kam's Roast Goose",
+      "description": "Kam's Roast Goose is a polished but still firmly local Cantonese restaurant known for precise preparation and strong roast meat flavors. It is an excellent choice for travelers who want a meal that feels iconic without being overly formal.",
+      "location": "Hong Kong Island",
+      "price": "$$",
+      "special": "Especially valued for its roast goose and strong reputation among Hong Kong roast meat destinations."
+    },
+    {
+      "name": "Lau Sum Kee",
+      "image": "images/lau_sum_kee.webp",
+      "alt": "Noodle dishes from Lau Sum Kee",
+      "description": "Lau Sum Kee offers a more traditional and understated experience, centered on handmade noodles and classic local comfort food. It suits visitors who want to eat well while staying close to the everyday rhythm of the city.",
+      "location": "Sham Shui Po, Kowloon",
+      "price": "$",
+      "special": "Represents a more old-school side of Hong Kong dining, with handmade noodles as its main draw."
+    }
+  ],
+  "activities": [
+    {
+      "name": "Victoria Peak Trail",
+      "image": "images/victoria_peak.webp",
+      "imageWide": "images/victoriapeak-widescreen.webp",
+      "alt": "View from Victoria Peak trail overlooking Hong Kong skyline",
+      "description": "The Victoria Peak Trail is one of the most accessible ways to experience Hong Kong's dramatic skyline from above. The route is relatively gentle and well-paved, making it suitable for a wide range of visitors.",
+      "difficulty": "Easy",
+      "duration": "1–2 hours",
+      "startingPoint": "The Peak Tower"
+    },
+    {
+      "name": "Dragon's Back Trail",
+      "image": "images/dragons_back.webp",
+      "alt": "Ridge view along Dragon's Back hiking trail",
+      "description": "Dragon's Back is one of Hong Kong's most famous hikes, known for its sweeping ridge views and coastal scenery. It offers a slightly more challenging experience while still being manageable for most visitors.",
+      "difficulty": "Moderate",
+      "duration": "2–3 hours",
+      "startingPoint": "To Tei Wan bus stop"
+    },
+    {
+      "name": "Lamma Island Walk",
+      "image": "images/lamma.webp",
+      "alt": "Coastal path on Lamma Island",
+      "description": "The Lamma Island walk provides a relaxed coastal route connecting small villages, beaches, and seafood restaurants. It's ideal for those who want a slower-paced outdoor experience.",
+      "difficulty": "Easy",
+      "duration": "1.5–2 hours",
+      "startingPoint": "Yung Shue Wan Ferry Pier"
+    },
+    {
+      "name": "Tai Mo Shan",
+      "image": "images/taimosan.webp",
+      "alt": "Mountain view from Tai Mo Shan",
+      "description": "Tai Mo Shan is Hong Kong's highest peak and offers a more demanding climb with rewarding panoramic views. It is best suited for visitors looking for a more physically engaging hike.",
+      "difficulty": "Challenging",
+      "duration": "3–4 hours",
+      "startingPoint": "Route Twisk"
+    }
+  ]
+}

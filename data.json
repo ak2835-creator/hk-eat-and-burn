@@ -1,15 +1,6 @@
 {
   "restaurants": [
     {
-  "name": "New Restaurant Name",
-  "image": "images/your_image.webp",
-  "alt": "Description of the image",
-  "description": "Your description here.",
-  "location": "District, Hong Kong",
-  "price": "$",
-  "special": "What makes it worth visiting."
-},
-    {
       "name": "Yat Lok (Central)",
       "image": "images/yat_lok.webp",
       "alt": "Roast goose dish from Yat Lok restaurant",
